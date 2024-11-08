@@ -1,0 +1,92 @@
+[
+  {
+    "recipe_id": "1",
+    "recipe_name": "Spicy Chicken Stir-Fry",
+    "recipe_image": "https://shorturl.at/jJL4I",
+    "short_description": "A quick and flavorful chicken stir-fry with a spicy kick.",
+    "ingredients": [
+      "550 g chicken",
+      "120 ml soy sauce",
+      "2 tbsp chili paste",
+      "1 onion, sliced",
+      "200 g bell pepper, sliced"
+    ],
+    "preparing_time": "30 min",
+    "calories": "320 calories"
+  },
+  {
+    "recipe_id": "2",
+    "recipe_name": "Creamy Basil Pasta",
+    "recipe_image": "https://shorturl.at/HVwtv",
+    "short_description": "A rich and creamy pasta with fresh basil flavor.",
+    "ingredients": [
+      "400 g pasta",
+      "200 ml heavy cream",
+      "100 g basil leaves",
+      "50 g Parmesan cheese",
+      "1 garlic clove, minced"
+    ],
+    "preparing_time": "25 min",
+    "calories": "420 calories"
+  },
+  {
+    "recipe_id": "3",
+    "recipe_name": "Grilled Salmon with Asparagus",
+    "recipe_image": "https://shorturl.at/wmFyT",
+    "short_description": "Perfectly grilled salmon served with fresh asparagus.",
+    "ingredients": [
+      "2 salmon fillets",
+      "200 g asparagus",
+      "2 tbsp olive oil",
+      "1 lemon, sliced",
+      "Salt and pepper to taste"
+    ],
+    "preparing_time": "20 min",
+    "calories": "300 calories"
+  },
+  {
+    "recipe_id": "4",
+    "recipe_name": "Vegetable Stir-Fry",
+    "recipe_image": "https://shorturl.at/v6o5F",
+    "short_description": "A vibrant and healthy vegetable stir-fry with a savory sauce.",
+    "ingredients": [
+      "200 g broccoli",
+      "150 g carrots, sliced",
+      "100 g bell pepper, sliced",
+      "50 ml soy sauce",
+      "1 tbsp sesame oil"
+    ],
+    "preparing_time": "15 min",
+    "calories": "200 calories"
+  },
+  {
+    "recipe_id": "5",
+    "recipe_name": "Beef Tacos",
+    "recipe_image": "https://media.istockphoto.com/id/509081571/photo/beef-taco-salad.jpg?s=612x612&w=0&k=20&c=xdem73zQXDq8B1vd9dQqOruy6uTt-nq0XeTVIUCR1Fs=",
+    "short_description": "Tasty beef tacos with a variety of toppings.",
+    "ingredients": [
+      "500 g ground beef",
+      "1 onion, chopped",
+      "150 g lettuce, shredded",
+      "100 g cheddar cheese, shredded",
+      "8 taco shells"
+    ],
+    "preparing_time": "35 min",
+    "calories": "450 calories"
+  },
+  {
+    "recipe_id": "6",
+    "recipe_name": "Mushroom Risotto",
+    "recipe_image": "https://shorturl.at/NA5df",
+    "short_description": "Creamy risotto with flavorful mushrooms.",
+    "ingredients": [
+      "400 g Arborio rice",
+      "400 g mushrooms, sliced",
+      "1 onion, finely chopped",
+      "100 g Parmesan cheese",
+      "1 liter vegetable broth"
+    ],
+    "preparing_time": "40 min",
+    "calories": "350 calories"
+  }
+]

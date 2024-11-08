@@ -1,4 +1,18 @@
+import { useEffect, useState } from "react";
+import { Card } from "../../shared/Card";
+
 export const OurRecepies = () => {
+  const [recepies, setRecepies] = useState([]);
+
+  useEffect(() => {
+    fetch("./recepies.json")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setRecepies(data);
+      });
+  }, []);
+
   return (
     <div>
       <div className="section-title text-center py-20">
@@ -13,14 +27,13 @@ export const OurRecepies = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Left Column with Food Item Cards */}
           <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-white p-4 rounded-lg shadow-md">
-              <h2 className="text-lg font-semibold">Card One</h2>
-              <p>Delicious food item description.</p>
-            </div>
-            <div className="bg-white p-4 rounded-lg shadow-md">
+            {recepies.map((recepi) => (
+              <Card key={recepi.id} recepi={recepi} />
+            ))}
+            {/* <div className="bg-white p-4 rounded-lg shadow-md">
               <h2 className="text-lg font-semibold">Card Two</h2>
               <p>Another delicious food item description.</p>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Column with Cart */}
