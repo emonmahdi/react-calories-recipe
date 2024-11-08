@@ -1,0 +1,25 @@
+.banner-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./../../assets/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  border-radius: 30px;
+  color: white;   
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+} 
+.hero-area{
+    text-align: center;
+}
+.hero-area h1{
+    font-size: 28px;
+    font-weight: bold;
+}
+.hero-area p{
+    margin: 15px 0;
+}
