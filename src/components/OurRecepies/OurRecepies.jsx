@@ -1,21 +1,23 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import { Card } from "../../shared/Card";
+import { Cart } from "../Cart/Cart";
 
-export const OurRecepies = () => {
-  const [recepies, setRecepies] = useState([]);
+export const OurRecepies = ({ handleWantToCook, recepies }) => {
+  const [recepiess, setRecepiess] = useState([]);
 
   useEffect(() => {
     fetch("./recepies.json")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        setRecepies(data);
+        // console.log(data);
+        setRecepiess(data);
       });
   }, []);
 
   return (
     <div>
-      <div className="section-title text-center py-20">
+      <div className="section-title text-center py-8">
         <h2 className="mb-4">Our Recepies</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus
@@ -24,11 +26,15 @@ export const OurRecepies = () => {
         </p>
       </div>
       <div className="container mx-auto p-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 ">
           {/* Left Column with Food Item Cards */}
-          <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {recepies.map((recepi) => (
-              <Card key={recepi.id} recepi={recepi} />
+          <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {recepiess.map((recepi, idx) => (
+              <Card
+                key={idx}
+                recepi={recepi}
+                handleWantToCook={handleWantToCook}
+              />
             ))}
             {/* <div className="bg-white p-4 rounded-lg shadow-md">
               <h2 className="text-lg font-semibold">Card Two</h2>
@@ -37,9 +43,8 @@ export const OurRecepies = () => {
           </div>
 
           {/* Right Column with Cart */}
-          <div className="bg-gray-100 p-4 rounded-lg shadow-md">
-            <h2 className="text-xl font-bold mb-4">Cart</h2>
-            <p>Your selected items will appear here.</p>
+          <div className="">
+            <Cart recepies={recepies} />
           </div>
         </div>
       </div>

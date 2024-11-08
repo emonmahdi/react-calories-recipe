@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-export const Card = ({ recepi }) => {
+export const Card = ({ recepi, handleWantToCook }) => {
   const {
     recipe_name,
     short_description,
@@ -20,9 +20,17 @@ export const Card = ({ recepi }) => {
           <li key={idx}>{ingre}</li>
         ))}
       </ul>
-      <div className="flex justify-between items-center my-4">
+      <div className="flex justify-between items-center my-2">
         <p>{preparing_time}</p>
         <p>{calories}</p>
+      </div>
+      <div className="text-center">
+        <button
+          onClick={() => handleWantToCook(recepi)}
+          className="p-4 bg-green-400 rounded-md text-black font-bold m-4"
+        >
+          Want to Cook
+        </button>
       </div>
     </div>
   );
