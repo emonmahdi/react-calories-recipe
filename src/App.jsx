@@ -1,12 +1,17 @@
 import './App.css'
+import { Banner } from "./components/Banner/Banner";
+import NavBar from "./components/NavBar/NavBar";
+import { OurRecepies } from "./components/OurRecepies/OurRecepies";
 
 function App() { 
 
   return (
-    <>
-       <h1 className='text-3xl bg-red-400'>Welcome to React Calories</h1>
-    </>
-  )
+    <div className="px-20">
+      <NavBar />
+      <Banner />
+      <OurRecepies />
+    </div>
+  );
 }
 
 export default App
